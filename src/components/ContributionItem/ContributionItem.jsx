@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import style from './ContributionItem.module.css';
 
-export default function ContributionItem({number, date}) {
+export default function ContributionItem({ number, date }) {
 
   const [showDetails, setShowDetails] = useState(false);
 
@@ -31,11 +31,19 @@ export default function ContributionItem({number, date}) {
   let utcDate = new Date(Date.UTC(year, month, day, 0, 0, 0));
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   let displayedDate = utcDate.toLocaleDateString('ru-RU', options);
-  
+
+  const displayDetails = () => {
+    setShowDetails(true);
+    setTimeout(() => {
+      setShowDetails(false)
+    }, 2000);
+  }
+
+
 
   return (
     <div className={style.container}>
-      <div className={`${style.item} ${styleClass}`} onClick={() => setShowDetails(!showDetails)} />
+      <div className={`${style.item} ${styleClass}`} onClick={() => displayDetails()} />
       {showDetails &&
         <div className={style.details}>
           <span className={style.number}>{displayedContributions}</span>
