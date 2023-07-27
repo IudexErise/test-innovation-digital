@@ -10,6 +10,8 @@
   height: 15px;
   background-color: #ededed;
   border: 1px solid #ededed;
+  position: relative;
+  z-index: 1;
 }
 
 .item:hover {
@@ -26,7 +28,9 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: -60px;
-  margin-left: -70px;
+  margin-left: -65px;
+  position: relative;
+  z-index: 2;
 }
 
 .number {
