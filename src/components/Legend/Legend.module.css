@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  margin-left: 22px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.item {
+  width: 15px;
+  height: 15px;
+  margin-right: 2px;
+}
+
+.text {
+  color: #959494;
+  font-family: Inter;
+  font-size: 8px;
+}
+
+.text:first-of-type {
+  margin-right: 6.5px;
+}
+
+.text:last-of-type {
+  margin-left: 7.5px;
+}

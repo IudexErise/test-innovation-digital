@@ -1,4 +1,5 @@
 import style from './DaysHeader.module.css';
+import React from "react";
 
 export default function DaysHeader() {
   return (
