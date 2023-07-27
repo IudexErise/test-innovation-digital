@@ -1,0 +1,13 @@
+.container {
+  width: 847px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 38px;
+}
+
+.text {
+  color: #959494;
+  font-family: Inter;
+  font-size: 12px;
+}

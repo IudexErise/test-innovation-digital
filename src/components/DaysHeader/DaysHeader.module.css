@@ -1,0 +1,13 @@
+.container {
+  width: 17px;
+  height: 81px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.text {
+  color: #959494;
+  font-family: Inter;
+  font-size: 12px;
+}
