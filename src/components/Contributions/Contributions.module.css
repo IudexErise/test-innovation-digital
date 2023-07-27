@@ -1,7 +1,20 @@
 .container {
   display: flex;
+  gap: 60px;
+}
+
+.block {
+  display: flex;
   flex-direction: column;
   gap: 2px;
   max-height: 117px;
   flex-wrap: wrap;
+}
+
+.block:nth-of-type(10) {
+  margin-right: -25px;
+}
+
+.block:nth-of-type(11) {
+  margin-right: 25px;
 }

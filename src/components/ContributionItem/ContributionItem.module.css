@@ -7,8 +7,8 @@
 
 .item {
   width: 15px;
-  height: 15px;
-  border: 1px solid #ededed;
+  min-height: 15px;
+  border: 1px solid white;
   position: relative;
   z-index: 1;
 }
@@ -30,6 +30,7 @@
   margin-left: -65px;
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .number {
